@@ -1,9 +1,10 @@
-import Random from "./Main/Components/Random/Random";
+import "./Styles/App.scss";
+import PageExample from "./Main/Pages/PageExample/PageExample";
 
 function App() {
   return (
     <div className="App">
-      <Random />
+      <PageExample />
     </div>
   );
 }

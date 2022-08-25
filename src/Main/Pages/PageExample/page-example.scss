@@ -1,0 +1,7 @@
+@import "../../../Styles/App";
+
+.page-example {
+  @extend .align-items-center;
+  @extend .d-flex;
+  @extend .flex-column;
+}
