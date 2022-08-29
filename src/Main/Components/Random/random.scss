@@ -1,7 +1,10 @@
+// You can't use @extend here, you can only use bootstrap variables if you import "../../../Styles/variables"
+@import "../../../Styles/variables";
+
 .random {
-  background: red;
+  background: $yellow;
 
   &__header {
-    color: green;
+    color: $green;
   }
 }

@@ -1,4 +1,6 @@
+import React from 'react';
 import "./Styles/App.scss";
+
 import PageExample from "./Main/Pages/PageExample/PageExample";
 
 function App() {
