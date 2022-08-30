@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react";
 import "./Styles/App.scss";
 
 import PageExample from "./Main/Pages/PageExample/PageExample";
