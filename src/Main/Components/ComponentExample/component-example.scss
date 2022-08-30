@@ -1,0 +1,9 @@
+@import "../../../Styles/variables";
+
+.component-example {
+  background: $yellow;
+
+  &__header {
+    color: $green;
+  }
+}
