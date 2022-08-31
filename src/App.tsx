@@ -1,14 +1,14 @@
 import * as React from "react";
-import "./Styles/App.scss";
-
 import PageExample from "./Main/Pages/PageExample/PageExample";
 
+import "./Styles/App.scss";
+
 function App() {
-  return (
-    <div className="App">
-      <PageExample />
-    </div>
-  );
+    return (
+        <div className="App">
+            <PageExample/>
+        </div>
+    );
 }
 
 export default App;

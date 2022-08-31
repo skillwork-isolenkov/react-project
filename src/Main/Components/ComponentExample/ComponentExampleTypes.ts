@@ -1,4 +1,4 @@
-import { CallbackFn } from '../../Interfaces/CallbackFunction';
+import {CallbackFn} from '../../Interfaces/CallbackFunction';
 
 type ComponentExampleTypes = {
     headerText?: string,
