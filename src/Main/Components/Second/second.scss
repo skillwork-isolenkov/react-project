@@ -1,0 +1,5 @@
+@import "Styles/App.scss";
+
+.second {
+  @extend .bg-primary;
+}
