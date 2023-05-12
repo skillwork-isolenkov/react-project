@@ -1,34 +1,120 @@
 @import "~bootstrap/scss/bootstrap";
 
 $variable-prefix:'bs-';
-// TODO REMOVE !default if you need to override
+
+$pale-blue: #F5F7FF; // primary lightest
+$lavender-blue: #EBEEFE; // primary-light
+$blueberry-blue: #6366F1; // primary
+$royal-blue: #4338CA; // primary-dark
+$navy-blue: #312E81; // primary-darkest
+
+$ghost-white: #F8F9FA; // secondary-lightest
+$anti-flash-white: #F3F4F6; // secondary-light
+$slate-grey: #6C737F; // secondary
+$blue-grey: #384250; // secondary-dark
+$midnight-blue: #111927; // secondary-darkest
+
+$pinkish-beige: #FEF3F2; // error-lightest
+$misty-rose: #FEE4E2; // error-light
+$scarlet: #F04438; // error
+$brownish-orange: #B42318; // error-dark
+$brownish-undertone: #7A271A; // error-darkest
+
+$corn-silk: #FFFAEB; // warning-lightest
+$slight-orange: #FEF0C7; // warning-light
+$tangerine: #F79009; // warning
+$orange-brown: #B54708; // warning-dark
+$reddish-brown: #7A2E0E; // warning-darkest
+
+$baby-blue: #ECFDFF; // info-lightest
+$light-blue: #CFF9FE; // info-light
+$turquoise-blue: #06AED4; // info
+$prussian-blue: #0E7090; // info-dark
+$slight-blue: #164C63; // info-darkest
+
+$mint-cream: #F0FDF9; // success-lightest
+$pale-aqua: #CCFBEF; // success-light
+$turquoise: #15B79E; // success
+$pine-green: #107569; // success-dark
+$evergreen: #134E48; // success-darkest
+
+$lavender-mist: #F9F5FF; // purple-lightest
+$soap: #F4EBFF; // purple-light
+$violet: #9E77ED; // purple
+$purple-heart: #6941C6; // purple-dark
+$bluish-purple: #42307D; // purple-darkest
+
+$bluish-gray: #F5F7FF; // indigo-lightest
+$lavender-gray: #EBEEFE; // indigo-light
+$dark-bluish-purple: #6366F1; // indigo
+$saturated-bluish-purple: #4338CA; // indigo-dark
+$royal-purple: #312E81; // indigo-darkest
+
+$greenish-white: #F6FEF9; // green-lightest
+$honeydew-green: #EDFCF2; // green-light
+$green-sea: #16B364; // green
+$muted-pine-green: #087443; // green-dark
+$hunter-green: #084C2E; // green-darkest
+
+$muted-ghost-white: #F5F8FF; // blue-lightest
+$bluish-white: #EBEFFF; // blue-light
+$electric-blue: #2970FF; // blue
+$cobalt-blue: #004EEB; // blue-dark
+$muted-prussian-blue: #00359E; // blue-darkest
+
 /* MAIN VARIABLES
  ============================================================== */
-$primary:       $gray-900;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary-lightest:    $pale-blue;
+$primary-light:       $lavender-blue;
+$primary:             $blueberry-blue;
+$primary-dark:        $royal-blue;
+$primary-darkest:     $navy-blue;
+$secondary-lightest:  $ghost-white;
+$secondary-light:     $anti-flash-white;
+$secondary:           $slate-grey;
+$secondary-dark:      $blue-grey;
+$secondary-darkest:   $midnight-blue;
+$error-lightest:      $pinkish-beige;
+$error-light:         $misty-rose;
+$error:               $scarlet;
+$error-dark:          $brownish-orange;
+$error-darkest:       $brownish-undertone;
+$warning-lightest:    $corn-silk;
+$warning-light:       $slight-orange;
+$warning:             $tangerine;
+$warning-dark:        $orange-brown;
+$warning-darkest:     $reddish-brown;
+$info-lightest:       $baby-blue;
+$info-light:          $light-blue;
+$info:                $turquoise-blue;
+$info-dark:           $prussian-blue;
+$info-darkest:        $slight-blue;
+$success-lightest:    $mint-cream;
+$success-light:       $pale-aqua;
+$success:             $turquoise;
+$success-dark:        $pine-green;
+$success-darkest:     $evergreen;
+$purple-lightest:     $lavender-mist;
+$purple-light:        $soap;
+$purple:              $violet;
+$purple-dark:         $purple-heart;
+$purple-darkest:      $bluish-purple;
+$indigo-lightest:     $bluish-gray;
+$indigo-light:        $lavender-gray;
+$indigo:              $dark-bluish-purple;
+$indigo-dark:         $saturated-bluish-purple;
+$indigo-darkest:      $royal-purple;
+$green-lightest:      $greenish-white;
+$green-light:         $honeydew-green;
+$green:               $green-sea;
+$green-dark:          $muted-pine-green;
+$green-darkest:       $hunter-green;
+$blue-lightest:       $muted-ghost-white;
+$blue-light:          $bluish-white;
+$blue:                $electric-blue;
+$blue-dark:           $cobalt-blue;
+$blue-darkest:        $muted-prussian-blue;
 /* MAIN VARIABLES END
- ============================================================== */
-
-/* GRAY VARIABLES
- ============================================================== */
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-/* GRAY VARIABLES END
  ============================================================== */
 
 /* MAIN COLOURS
@@ -44,22 +130,6 @@ $theme-colors: (
   "dark":       $dark
 );
 /* MAIN COLOURS END
- ============================================================== */
-
-/* GRAY COLOURS
- ============================================================== */
-$grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-) !default;
-/* GRAY COLOURS END
  ============================================================== */
 
 /* DEFAULT FONT SIZE

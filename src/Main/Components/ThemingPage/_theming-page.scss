@@ -1,0 +1,24 @@
+@import "Styles/App.scss";
+
+.theming-page {
+
+  &__title {
+    @extend .d-flex;
+    @extend .justify-content-center;
+  }
+
+  &__container {
+    @extend .container;
+  }
+
+  &__row {
+    @extend .row;
+  }
+
+  &__column {
+    @extend .col-sm-6;
+    @extend .col-md-4;
+    @extend .col-lg-3;
+    @extend .my-4;
+  }
+}

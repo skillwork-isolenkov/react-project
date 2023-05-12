@@ -1,13 +1,11 @@
-import Random from "./Main/Components/Random/Random";
-import Second from "./Main/Components/Second/Second";
+import ThemingPage from "Styles/Main/Components/ThemingPage/ThemingPage";
 
 import "./Styles/App.scss";
 
 function App() {
   return (
     <div className="App">
-      <Random />
-      <Second />
+      <ThemingPage />
     </div>
   );
 }
