@@ -1,7 +1,14 @@
+@import "../../../Styles/App.scss";
+
 .random {
   background: red;
 
   &__header {
     color: green;
+  }
+
+  &__buttons-wrapper {
+    @extend .d-flex;
+    @extend .gap-3;
   }
 }

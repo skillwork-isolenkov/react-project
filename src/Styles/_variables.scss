@@ -1,0 +1,126 @@
+@import "~bootstrap/scss/bootstrap";
+
+$variable-prefix:'bs-';
+// TODO REMOVE !default if you need to override
+/* MAIN VARIABLES
+ ============================================================== */
+$primary:       $gray-900;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+/* MAIN VARIABLES END
+ ============================================================== */
+
+/* GRAY VARIABLES
+ ============================================================== */
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+/* GRAY VARIABLES END
+ ============================================================== */
+
+/* MAIN COLOURS
+ ============================================================== */
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+/* MAIN COLOURS END
+ ============================================================== */
+
+/* GRAY COLOURS
+ ============================================================== */
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+/* GRAY COLOURS END
+ ============================================================== */
+
+/* DEFAULT FONT SIZE
+ ============================================================== */
+$font-size-base:              1rem;
+
+/* HEADINGS
+ ============================================================== */
+$h1-font-size:                $font-size-base * 3; // 3rem = 48px
+$h2-font-size:                $font-size-base * 2; // 32px
+$h3-font-size:                $font-size-base * 1.5; // 24px
+$h4-font-size:                $font-size-base * 1.25; // 20px
+$h5-font-size:                $font-size-base * 1; // 16px
+$h6-font-size:                0.875rem; // 14px
+
+$headings-font-weight:     600;
+/* HEADINGS END
+ ============================================================== */
+
+/* FONT SIZES
+ ============================================================== */
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+);
+/* FONT SIZES END
+ ============================================================== */
+
+/* DISPLAY FONT SIZES
+ ============================================================== */
+$display-font-sizes: (
+  1: 6rem, // 96px
+  2: 4.75rem, // 76px
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+/* DISPLAY FONT SIZES END
+ ============================================================== */
+
+/* SHADOWS
+ ============================================================== */
+$box-shadow-sm:               0 4px 4px rgba(black, .25);
+$box-shadow-lg:               .875rem .875rem .4rem -1px rgba(black, .25);
+/* SHADOWS END
+ ============================================================== */
+
+/* CHECKBOX
+ ============================================================== */
+$form-check-input-width:                  2em;
+$form-check-padding-start:                $form-check-input-width + .75em;
+$form-check-input-border:                 3px solid $gray-400;
+$form-check-input-border-radius:          .5em;
+$form-check-input-checked-color:          black;
+$form-check-input-checked-bg-color:       white;
+$form-check-input-checked-border-color:   $gray-400;
+$form-check-input-focus-border:           $gray-400;
+/* CHECKBOX END
+ ============================================================== */
