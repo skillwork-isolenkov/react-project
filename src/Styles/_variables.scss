@@ -1,7 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
-
-$variable-prefix:'bs-';
-
+/* COLOUR VARIABLES
+ ============================================================== */
 $pale-blue: #F5F7FF; // primary lightest
 $lavender-blue: #EBEEFE; // primary-light
 $blueberry-blue: #6366F1; // primary
@@ -14,11 +12,11 @@ $slate-grey: #6C737F; // secondary
 $blue-grey: #384250; // secondary-dark
 $midnight-blue: #111927; // secondary-darkest
 
-$pinkish-beige: #FEF3F2; // error-lightest
-$misty-rose: #FEE4E2; // error-light
-$scarlet: #F04438; // error
-$brownish-orange: #B42318; // error-dark
-$brownish-undertone: #7A271A; // error-darkest
+$pinkish-beige: #FEF3F2; // danger-lightest
+$misty-rose: #FEE4E2; // danger-light
+$scarlet: #F04438; // danger
+$brownish-orange: #B42318; // danger-dark
+$brownish-undertone: #7A271A; // danger-darkest
 
 $corn-silk: #FFFAEB; // warning-lightest
 $slight-orange: #FEF0C7; // warning-light
@@ -38,17 +36,17 @@ $turquoise: #15B79E; // success
 $pine-green: #107569; // success-dark
 $evergreen: #134E48; // success-darkest
 
-$lavender-mist: #F9F5FF; // purple-lightest
-$soap: #F4EBFF; // purple-light
-$violet: #9E77ED; // purple
-$purple-heart: #6941C6; // purple-dark
-$bluish-purple: #42307D; // purple-darkest
-
 $bluish-gray: #F5F7FF; // indigo-lightest
 $lavender-gray: #EBEEFE; // indigo-light
 $dark-bluish-purple: #6366F1; // indigo
 $saturated-bluish-purple: #4338CA; // indigo-dark
 $royal-purple: #312E81; // indigo-darkest
+
+$lavender-mist: #F9F5FF; // purple-lightest
+$soap: #F4EBFF; // purple-light
+$violet: #9E77ED; // purple
+$purple-heart: #6941C6; // purple-dark
+$bluish-purple: #42307D; // purple-darkest
 
 $greenish-white: #F6FEF9; // green-lightest
 $honeydew-green: #EDFCF2; // green-light
@@ -61,8 +59,67 @@ $bluish-white: #EBEFFF; // blue-light
 $electric-blue: #2970FF; // blue
 $cobalt-blue: #004EEB; // blue-dark
 $muted-prussian-blue: #00359E; // blue-darkest
+/* COLOUR VARIABLES END
+ ============================================================== */
 
-/* MAIN VARIABLES
+/* COLORS MAP
+ ============================================================== */
+$colors: (
+  "pale-blue":                 $pale-blue,
+  "lavender-blue":             $lavender-blue,
+  "blueberry-blue":            $blueberry-blue,
+  "royal-blue":                $royal-blue,
+  "navy-blue":                 $navy-blue,
+  "ghost-white":               $ghost-white,
+  "anti-flash-white":          $anti-flash-white,
+  "slate-grey":                $slate-grey,
+  "blue-grey":                 $blue-grey,
+  "midnight-blue":             $midnight-blue,
+  "pinkish-beige":             $pinkish-beige,
+  "misty-rose":                $misty-rose,
+  "scarlet":                   $scarlet,
+  "brownish-orange":           $brownish-orange,
+  "brownish-undertone":        $brownish-undertone,
+  "corn-silk":                 $corn-silk,
+  "slight-orange":             $slight-orange,
+  "tangerine":                 $tangerine,
+  "orange-brown":              $orange-brown,
+  "reddish-brown":             $reddish-brown,
+  "baby-blue":                 $baby-blue,
+  "light-blue":                $light-blue,
+  "turquoise-blue":            $turquoise-blue,
+  "prussian-blue":             $prussian-blue,
+  "slight-blue":               $slight-blue,
+  "mint-cream":                $mint-cream,
+  "pale-aqua":                 $pale-aqua,
+  "turquoise":                 $turquoise,
+  "pine-green":                $pine-green,
+  "evergreen":                 $evergreen,
+  "lavender-mist":             $lavender-mist,
+  "soap":                      $soap,
+  "violet":                    $violet,
+  "purple-heart":              $purple-heart,
+  "bluish-purple":             $bluish-purple,
+  "bluish-gray":               $bluish-gray,
+  "lavender-gray":             $lavender-gray,
+  "dark-bluish-purple":        $dark-bluish-purple,
+  "saturated-bluish-purple":   $saturated-bluish-purple,
+  "royal-purple":              $royal-purple,
+  "greenish-white":            $greenish-white,
+  "honeydew-green":            $honeydew-green,
+  "green-sea":                 $green-sea,
+  "muted-pine-green":          $muted-pine-green,
+  "hunter-green":              $hunter-green,
+  "muted-ghost-white":         $muted-ghost-white,
+  "bluish-white":              $bluish-white,
+  "electric-blue":             $electric-blue,
+  "cobalt-blue":               $cobalt-blue,
+  "muted-prussian-blue":       $muted-prussian-blue
+);
+/* COLORS MAP END
+ ============================================================== */
+
+/* THEMING COLOUR VARIABLES
  ============================================================== */
 $primary-lightest:    $pale-blue;
 $primary-light:       $lavender-blue;
@@ -74,11 +131,11 @@ $secondary-light:     $anti-flash-white;
 $secondary:           $slate-grey;
 $secondary-dark:      $blue-grey;
 $secondary-darkest:   $midnight-blue;
-$error-lightest:      $pinkish-beige;
-$error-light:         $misty-rose;
-$error:               $scarlet;
-$error-dark:          $brownish-orange;
-$error-darkest:       $brownish-undertone;
+$danger-lightest:     $pinkish-beige;
+$danger-light:        $misty-rose;
+$danger:              $scarlet;
+$danger-dark:         $brownish-orange;
+$danger-darkest:      $brownish-undertone;
 $warning-lightest:    $corn-silk;
 $warning-light:       $slight-orange;
 $warning:             $tangerine;
@@ -94,16 +151,16 @@ $success-light:       $pale-aqua;
 $success:             $turquoise;
 $success-dark:        $pine-green;
 $success-darkest:     $evergreen;
-$purple-lightest:     $lavender-mist;
-$purple-light:        $soap;
-$purple:              $violet;
-$purple-dark:         $purple-heart;
-$purple-darkest:      $bluish-purple;
 $indigo-lightest:     $bluish-gray;
 $indigo-light:        $lavender-gray;
 $indigo:              $dark-bluish-purple;
 $indigo-dark:         $saturated-bluish-purple;
 $indigo-darkest:      $royal-purple;
+$purple-lightest:     $lavender-mist;
+$purple-light:        $soap;
+$purple:              $violet;
+$purple-dark:         $purple-heart;
+$purple-darkest:      $bluish-purple;
 $green-lightest:      $greenish-white;
 $green-light:         $honeydew-green;
 $green:               $green-sea;
@@ -114,22 +171,64 @@ $blue-light:          $bluish-white;
 $blue:                $electric-blue;
 $blue-dark:           $cobalt-blue;
 $blue-darkest:        $muted-prussian-blue;
-/* MAIN VARIABLES END
+/* THEMING COLOUR VARIABLES END
  ============================================================== */
 
-/* MAIN COLOURS
+/* THEMING COLORS MAP
  ============================================================== */
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary-lightest":     $primary-lightest,
+  "primary-light":        $primary-light,
+  "primary":              $primary,
+  "primary-dark":         $primary-dark,
+  "primary-darkest":      $primary-darkest,
+  "secondary-light":      $secondary-light,
+  "secondary":            $secondary,
+  "secondary-dark":       $secondary-dark,
+  "danger-lightest":      $danger-lightest,
+  "danger-light":         $danger-light,
+  "danger":               $danger,
+  "danger-dark":          $danger-dark,
+  "danger-darkest":       $danger-darkest,
+  "warning-lightest":     $warning-lightest,
+  "warning-light":        $warning-light,
+  "warning":              $warning,
+  "warning-dark":         $warning-dark,
+  "warning-darkest":      $warning-darkest,
+  "info-lightest":        $info-lightest,
+  "info-light":           $info-light,
+  "info":                 $info,
+  "info-dark":            $info-dark,
+  "info-darkest":         $info-darkest,
+  "success-lightest":     $success-lightest,
+  "success-light":        $success-light,
+  "success":              $success,
+  "success-dark":         $success-dark,
+  "success-darkest":      $success-darkest,
+  "indigo-lightest":      $indigo-lightest,
+  "indigo-light":         $indigo-light,
+  "indigo":               $indigo,
+  "indigo-dark":          $indigo-dark,
+  "indigo-darkest":       $indigo-darkest,
+  "purple-lightest":      $purple-lightest,
+  "purple-light":         $purple-light,
+  "purple":               $purple,
+  "purple-dark":          $purple-dark,
+  "purple-darkest":       $purple-darkest,
+  "green-lightest":       $green-lightest,
+  "green-light":          $green-light,
+  "green":                $green,
+  "green-dark":           $green-dark,
+  "green-darkest":        $green-darkest,
+  "blue-lightest":        $blue-lightest,
+  "blue-light":           $blue-light,
+  "blue":                 $blue,
+  "blue-dark":            $blue-dark,
+  "blue-darkest":         $blue-darkest,
+  "dark":                 $secondary-darkest,
+  "light":                $secondary-lightest,
 );
-/* MAIN COLOURS END
+/* THEMING COLORS MAP END
  ============================================================== */
 
 /* DEFAULT FONT SIZE
@@ -186,11 +285,11 @@ $box-shadow-lg:               .875rem .875rem .4rem -1px rgba(black, .25);
  ============================================================== */
 $form-check-input-width:                  2em;
 $form-check-padding-start:                $form-check-input-width + .75em;
-$form-check-input-border:                 3px solid $gray-400;
+$form-check-input-border:                 3px solid $primary;
 $form-check-input-border-radius:          .5em;
 $form-check-input-checked-color:          black;
 $form-check-input-checked-bg-color:       white;
-$form-check-input-checked-border-color:   $gray-400;
-$form-check-input-focus-border:           $gray-400;
+$form-check-input-checked-border-color:   $primary;
+$form-check-input-focus-border:           $primary;
 /* CHECKBOX END
  ============================================================== */

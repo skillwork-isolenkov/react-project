@@ -1,11 +1,11 @@
 .fill-background {
+  @extend .bg-dark;
   @extend .bottom-0;
   @extend .end-0;
-  @extend .position-absolute;
+  @extend .position-fixed;
   @extend .start-0;
   @extend .top-0;
 
-  background-color: lightgray;
   height: 100vh;
-  z-index: -1;
+  z-index: -100;
 }
